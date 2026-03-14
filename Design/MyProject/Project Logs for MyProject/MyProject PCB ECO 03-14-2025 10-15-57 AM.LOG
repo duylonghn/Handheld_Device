@@ -1,0 +1,4 @@
+Added Pin To Net: NetName=3V3-1 Pin=BW+?-1
+Added Net: Name=3V3-1
+Added Pin To Net: NetName=3V3-BW Pin=BW16-10
+Added Net: Name=3V3-BW

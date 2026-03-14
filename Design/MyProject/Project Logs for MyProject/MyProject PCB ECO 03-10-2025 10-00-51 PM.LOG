@@ -1,0 +1,196 @@
+Added Component: Designator=?(R1/4W)
+Add component (AddParameter): Name = "Value"; Value = "R1/4W - 1K"; VariantName = "[No Variations]"
+Added Component: Designator=?(R1/4W)
+Add component (AddParameter): Name = "Value"; Value = "R1/4W - 1K"; VariantName = "[No Variations]"
+Added Component: Designator=B?(BUZZ)
+Added Component: Designator=BAT(SW6)
+Add component (AddParameter): Name = "Value"; Value = "SW6"; VariantName = "[No Variations]"
+Added Component: Designator=BAT(Header 4)
+Added Component: Designator=BW16(BW16-KIT)
+Added Component: Designator=BW+?(Header 2)
+Added Component: Designator=DOWN?(SW2)
+Add component (AddParameter): Name = "Value"; Value = "SW chip 2 pin"; VariantName = "[No Variations]"
+Added Component: Designator=ESP32(ESP32_30)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.mouser.com/datasheet/2/891/esp32_wroom_32d_esp32_wroom_32u_datasheet_en-1365844.pdf"; VariantName = "[No Variations]"
+Added Component: Designator=HBW?(Header 2)
+Added Component: Designator=NGUON(SW6)
+Add component (AddParameter): Name = "Value"; Value = "SW6"; VariantName = "[No Variations]"
+Added Component: Designator=OLED ?(OLED 1.3inch)
+Added Component: Designator=OLED(OLED_BTN)
+Added Component: Designator=OUT+(HEAD1)
+Add component (AddParameter): Name = "Published"; Value = "6-May-2014"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Cynetik Group"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Revised"; Value = "Zion Blue"; VariantName = "[No Variations]"
+Added Component: Designator=OUT-(HEAD1)
+Add component (AddParameter): Name = "Published"; Value = "6-May-2014"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Cynetik Group"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Revised"; Value = "Zion Blue"; VariantName = "[No Variations]"
+Added Component: Designator=PIN+(HEAD1)
+Add component (AddParameter): Name = "Published"; Value = "6-May-2014"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Cynetik Group"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Revised"; Value = "Zion Blue"; VariantName = "[No Variations]"
+Added Component: Designator=PIN-(HEAD1)
+Add component (AddParameter): Name = "Published"; Value = "6-May-2014"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Cynetik Group"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Revised"; Value = "Zion Blue"; VariantName = "[No Variations]"
+Added Component: Designator=PINOUT(Header 2)
+Added Component: Designator=SD(SD)
+Added Component: Designator=SEL?(SW2)
+Add component (AddParameter): Name = "Value"; Value = "SW chip 2 pin"; VariantName = "[No Variations]"
+Added Component: Designator=TP(TP4056)
+Added Component: Designator=UART2(Header 2)
+Added Component: Designator=UART(Header 4)
+Added Component: Designator=UP?(SW2)
+Add component (AddParameter): Name = "Value"; Value = "SW chip 2 pin"; VariantName = "[No Variations]"
+Added Component: Designator=VIN+?(HEAD1)
+Add component (AddParameter): Name = "Published"; Value = "6-May-2014"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Cynetik Group"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Revised"; Value = "Zion Blue"; VariantName = "[No Variations]"
+Added Component: Designator=VIN-?(HEAD1)
+Add component (AddParameter): Name = "Published"; Value = "6-May-2014"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Cynetik Group"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Revised"; Value = "Zion Blue"; VariantName = "[No Variations]"
+Added Component: Designator=VOUT(Header 4)
+Added Pin To Net: NetName=+5 Pin=BAT-3
+Added Pin To Net: NetName=+5 Pin=ESP32-15
+Added Pin To Net: NetName=+5 Pin=OLED-2
+Added Pin To Net: NetName=+5 Pin=UART-2
+Added Net: Name=+5
+Added Pin To Net: NetName=3V3 Pin=ESP32-30
+Added Pin To Net: NetName=3V3 Pin=SD-1
+Added Net: Name=3V3
+Added Pin To Net: NetName=5V Pin=BW16-11
+Added Pin To Net: NetName=5V Pin=OLED ?-1
+Added Net: Name=5V
+Added Pin To Net: NetName=BW- Pin=BW16-9
+Added Pin To Net: NetName=BW- Pin=BW+?-2
+Added Pin To Net: NetName=BW- Pin=DOWN?-2
+Added Pin To Net: NetName=BW- Pin=OLED ?-2
+Added Pin To Net: NetName=BW- Pin=SEL?-2
+Added Pin To Net: NetName=BW- Pin=UP?-1
+Added Net: Name=BW-
+Added Pin To Net: NetName=C1 Pin=ESP32-26
+Added Pin To Net: NetName=C1 Pin=OLED-5
+Added Net: Name=C1
+Added Pin To Net: NetName=C2 Pin=ESP32-13
+Added Pin To Net: NetName=C2 Pin=OLED-6
+Added Net: Name=C2
+Added Pin To Net: NetName=C3 Pin=ESP32-7
+Added Pin To Net: NetName=C3 Pin=OLED-7
+Added Net: Name=C3
+Added Pin To Net: NetName=C4 Pin=ESP32-6
+Added Pin To Net: NetName=C4 Pin=OLED-8
+Added Net: Name=C4
+Added Pin To Net: NetName=CLK Pin=ESP32-22
+Added Pin To Net: NetName=CLK Pin=SD-4
+Added Net: Name=CLK
+Added Pin To Net: NetName=CS Pin=ESP32-23
+Added Pin To Net: NetName=CS Pin=SD-2
+Added Net: Name=CS
+Added Pin To Net: NetName=GND1 Pin=VOUT-2
+Added Net: Name=GND1
+Added Pin To Net: NetName=GND Pin=B?-1
+Added Pin To Net: NetName=GND Pin=BAT-2
+Added Pin To Net: NetName=GND Pin=ESP32-14
+Added Pin To Net: NetName=GND Pin=OLED-1
+Added Pin To Net: NetName=GND Pin=UART-1
+Added Net: Name=GND
+Added Pin To Net: NetName=IO34 Pin=?-1
+Added Pin To Net: NetName=IO34 Pin=?-2
+Added Pin To Net: NetName=IO34 Pin=ESP32-4
+Added Net: Name=IO34
+Added Pin To Net: NetName=MISO Pin=ESP32-21
+Added Pin To Net: NetName=MISO Pin=SD-5
+Added Net: Name=MISO
+Added Pin To Net: NetName=MOSI Pin=ESP32-16
+Added Pin To Net: NetName=MOSI Pin=SD-3
+Added Net: Name=MOSI
+Added Pin To Net: NetName=NetBW16_3 Pin=BW16-3
+Added Pin To Net: NetName=NetBW16_3 Pin=UP?-2
+Added Net: Name=NetBW16_3
+Added Pin To Net: NetName=NetBW16_4 Pin=BW16-4
+Added Pin To Net: NetName=NetBW16_4 Pin=OLED ?-3
+Added Net: Name=NetBW16_4
+Added Pin To Net: NetName=NetBW16_5 Pin=BW16-5
+Added Pin To Net: NetName=NetBW16_5 Pin=OLED ?-4
+Added Net: Name=NetBW16_5
+Added Pin To Net: NetName=NetBW16_10 Pin=BW16-10
+Added Pin To Net: NetName=NetBW16_10 Pin=BW+?-1
+Added Net: Name=NetBW16_10
+Added Pin To Net: NetName=NetBW16_15 Pin=BW16-15
+Added Pin To Net: NetName=NetBW16_15 Pin=HBW?-2
+Added Net: Name=NetBW16_15
+Added Pin To Net: NetName=NetBW16_16 Pin=BW16-16
+Added Pin To Net: NetName=NetBW16_16 Pin=HBW?-1
+Added Net: Name=NetBW16_16
+Added Pin To Net: NetName=NetBW16_18 Pin=BW16-18
+Added Pin To Net: NetName=NetBW16_18 Pin=DOWN?-1
+Added Net: Name=NetBW16_18
+Added Pin To Net: NetName=NetBW16_19 Pin=BW16-19
+Added Pin To Net: NetName=NetBW16_19 Pin=SEL?-1
+Added Net: Name=NetBW16_19
+Added Pin To Net: NetName=OUT2+ Pin=NGUON-3
+Added Pin To Net: NetName=OUT2+ Pin=OUT+-1
+Added Net: Name=OUT2+
+Added Pin To Net: NetName=OUT+ Pin=NGUON-2
+Added Pin To Net: NetName=OUT+ Pin=TP-4
+Added Net: Name=OUT+
+Added Pin To Net: NetName=OUT- Pin=OUT--1
+Added Pin To Net: NetName=OUT- Pin=TP-1
+Added Net: Name=OUT-
+Added Pin To Net: NetName=PIN2+ Pin=VOUT-3
+Added Net: Name=PIN2+
+Added Pin To Net: NetName=PIN+ Pin=PIN+-1
+Added Pin To Net: NetName=PIN+ Pin=TP-3
+Added Net: Name=PIN+
+Added Pin To Net: NetName=PIN- Pin=PIN--1
+Added Pin To Net: NetName=PIN- Pin=TP-2
+Added Pin To Net: NetName=PIN- Pin=VOUT-4
+Added Net: Name=PIN-
+Added Pin To Net: NetName=R1 Pin=ESP32-11
+Added Pin To Net: NetName=R1 Pin=OLED-9
+Added Net: Name=R1
+Added Pin To Net: NetName=R2 Pin=ESP32-10
+Added Pin To Net: NetName=R2 Pin=OLED-10
+Added Net: Name=R2
+Added Pin To Net: NetName=R3 Pin=ESP32-9
+Added Pin To Net: NetName=R3 Pin=OLED-11
+Added Net: Name=R3
+Added Pin To Net: NetName=R4 Pin=ESP32-8
+Added Pin To Net: NetName=R4 Pin=OLED-12
+Added Net: Name=R4
+Added Pin To Net: NetName=RX2 Pin=ESP32-25
+Added Pin To Net: NetName=RX2 Pin=UART2-2
+Added Net: Name=RX2
+Added Pin To Net: NetName=RX Pin=ESP32-19
+Added Pin To Net: NetName=RX Pin=UART-3
+Added Net: Name=RX
+Added Pin To Net: NetName=SCL Pin=ESP32-17
+Added Pin To Net: NetName=SCL Pin=OLED-3
+Added Net: Name=SCL
+Added Pin To Net: NetName=SDA Pin=ESP32-20
+Added Pin To Net: NetName=SDA Pin=OLED-4
+Added Net: Name=SDA
+Added Pin To Net: NetName=TX2 Pin=B?-2
+Added Pin To Net: NetName=TX2 Pin=ESP32-24
+Added Pin To Net: NetName=TX2 Pin=UART2-1
+Added Net: Name=TX2
+Added Pin To Net: NetName=TX Pin=ESP32-18
+Added Pin To Net: NetName=TX Pin=UART-4
+Added Net: Name=TX
+Added Pin To Net: NetName=Vin2 Pin=BAT-1
+Added Pin To Net: NetName=Vin2 Pin=BAT-2
+Added Net: Name=Vin2
+Added Pin To Net: NetName=Vout Pin=VIN+?-1
+Added Pin To Net: NetName=Vout Pin=VOUT-1
+Added Net: Name=Vout
+Added Pin To Net: NetName=ÐoPin1+ Pin=?-2
+Added Net: Name=ÐoPin1+
+Added Pin To Net: NetName=ÐoPin+ Pin=BAT-3
+Added Net: Name=ÐoPin+
+Added Pin To Net: NetName=ÐoPin- Pin=?-1
+Added Pin To Net: NetName=ÐoPin- Pin=BAT-4
+Added Net: Name=ÐoPin-
+Added Class: Name=MyProject
+Added Room: Name=MyProject

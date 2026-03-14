@@ -1,0 +1,36 @@
+Added Component: Designator=5V(HEAD1)
+Add component (AddParameter): Name = "Published"; Value = "6-May-2014"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Cynetik Group"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Revised"; Value = "Zion Blue"; VariantName = "[No Variations]"
+Added Component: Designator=GND(HEAD1)
+Add component (AddParameter): Name = "Published"; Value = "6-May-2014"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Cynetik Group"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Revised"; Value = "Zion Blue"; VariantName = "[No Variations]"
+Added Component: Designator=SW(HEAD1)
+Add component (AddParameter): Name = "Published"; Value = "6-May-2014"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Cynetik Group"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Revised"; Value = "Zion Blue"; VariantName = "[No Variations]"
+Added Component: Designator=VRX(HEAD1)
+Add component (AddParameter): Name = "Published"; Value = "6-May-2014"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Cynetik Group"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Revised"; Value = "Zion Blue"; VariantName = "[No Variations]"
+Added Component: Designator=VRY(HEAD1)
+Add component (AddParameter): Name = "Published"; Value = "6-May-2014"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Cynetik Group"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Revised"; Value = "Zion Blue"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=+5 Pin=5V-1
+Added Pin To Net: NetName=GND Pin=GND-1
+Added Pin To Net: NetName=SW Pin=ESP32-28
+Added Pin To Net: NetName=SW Pin=SW-1
+Added Net: Name=SW
+Added Pin To Net: NetName=VRX Pin=ESP32-3
+Added Pin To Net: NetName=VRX Pin=VRX-1
+Added Net: Name=VRX
+Added Pin To Net: NetName=VRY Pin=ESP32-2
+Added Pin To Net: NetName=VRY Pin=VRY-1
+Added Net: Name=VRY
+Added Member To Class: ClassName=MyProject Member=Component 5V Header 1
+Added Member To Class: ClassName=MyProject Member=Component GND Header 1
+Added Member To Class: ClassName=MyProject Member=Component SW Header 1
+Added Member To Class: ClassName=MyProject Member=Component VRX Header 1
+Added Member To Class: ClassName=MyProject Member=Component VRY Header 1
