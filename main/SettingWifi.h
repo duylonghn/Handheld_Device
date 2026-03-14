@@ -323,5 +323,4 @@ float testUploadSpeed() {
   Serial.println("Lỗi khi gửi dữ liệu.");
   return 0;
 }
-
 #endif

@@ -501,7 +501,7 @@ void displayTime() {
 
 // File trong thẻ SD
 void showFileList() {
-  listFilesInFolder("/");  // Đọc danh sách file từ thẻ SD
+  readSDFiles(currentPath.c_str());
 
   if (fileList.empty()) {
     Serial.println("❌ Không có file nào trong thư mục.");
@@ -515,12 +515,10 @@ void showFileList() {
 
   int selectedFile = 0;
   int fileMenuIndex = 0;
-  bool confirmed = false;
 
-  while (!confirmed) {
+  while (true) {
     oled.fillRect(0, 13, 128, 52, BLACK);
 
-    // Hiển thị tối đa 3 file
     for (int i = 0; i < 3; i++) {
       int idx = fileMenuIndex + i;
       if (idx >= fileList.size()) break;
@@ -528,26 +526,59 @@ void showFileList() {
       oled.setCursor(0, 13 + i * 16);
       oled.setTextSize(1);
       oled.setTextColor(WHITE);
-      if (idx == selectedFile) oled.print("> ");  // Đánh dấu file đang chọn
-      oled.print(fileList[idx]);
+
+      if (idx == selectedFile) oled.print("> ");
+      else oled.print("  ");
+
+      if (fileList[idx].isDirectory)
+        oled.print("/");  // folder có dấu /
+      else
+        oled.print(" ");
+
+      oled.print(fileList[idx].name);
     }
+
     oled.display();
 
     char key = keypad.getKey();
     if (key) {
-      if (key == 'A' && selectedFile > 0) {  // Lên
+      if (key == 'A' && selectedFile > 0) {
         selectedFile--;
         if (selectedFile < fileMenuIndex) fileMenuIndex--;
-      } else if (key == 'C' && selectedFile < fileList.size() - 1) {  // Xuống
+      } else if (key == 'C' && selectedFile < fileList.size() - 1) {
         selectedFile++;
         if (selectedFile >= fileMenuIndex + 3) fileMenuIndex++;
-      } else if (key == 'B') {  // Chọn file
-        Serial.printf("📄 Đã chọn file: %s\n", fileList[selectedFile].c_str());
-        confirmed = true;
-      } else if (key == 'D') {  // Quay lại menu chính
-        return;
+      } else if (key == 'B') {
+        if (fileList[selectedFile].isDirectory) {
+          // Vào folder con
+          currentPath = "/" + fileList[selectedFile].path;
+          showFileList();  // gọi đệ quy để hiển thị folder mới
+          return;
+        } else {
+          // Đã chọn file
+          Serial.printf("📄 File được chọn: %s\n", fileList[selectedFile].path.c_str());
+          // Xử lý file tại đây nếu cần
+          return;
+        }
+      } else if (key == 'D') {
+        // Quay lại folder cha
+        if (currentPath != "/") {
+          if (currentPath.endsWith("/")) currentPath.remove(currentPath.length() - 1);
+
+          int lastSlash = currentPath.lastIndexOf('/');
+          if (lastSlash >= 0) {
+            currentPath = currentPath.substring(0, lastSlash);
+            if (currentPath == "") currentPath = "/";
+            showFileList();  // Hiển thị lại folder cha
+            return;
+          }
+        } else {
+          // Ở root thì thoát
+          return;
+        }
       }
     }
+
     delay(100);
   }
 }

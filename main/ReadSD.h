@@ -10,36 +10,50 @@
 
 #define SD_CS 5
 
-std::vector<String> fileList;  // Danh sách file
+struct FileEntry {
+  String name;
+  String path;
+  bool isDirectory;
+};
 
-// 🗂 Đọc danh sách file từ thư mục "/Data/"
-void listFilesInFolder(const char* folderPath) {
-  fileList.clear();  // Xóa danh sách cũ
-  SD.begin(SD_CS);
+std::vector<FileEntry> fileList;
+String currentPath = "/";
+
+void readSDFiles(const char* folderPath) {
+  fileList.clear();
+  currentPath = String(folderPath);  // Cập nhật đường dẫn hiện tại
+
   if (!SD.begin(SD_CS)) {
     webSerial.println("❌ Không thể khởi động SD Card!");
     failSound(100);
     return;
   }
-  webSerial.println("✅ SD Card đã sẵn sàng");
-  verifySound(200);
+
+  delay(100);  // Cho SD ổn định (nên có nếu gắn/rút thẻ)
 
   File root = SD.open(folderPath);
-  if (!root) {
-    webSerial.println("❌ Không tìm thấy thư mục!");
+  if (!root || !root.isDirectory()) {
+    webSerial.println("❌ Không thể mở thư mục: " + String(folderPath));
     return;
   }
 
-  webSerial.println("📂 Danh sách file trong thư mục:");
   File file = root.openNextFile();
   while (file) {
-    if (!file.isDirectory()) {
-      fileList.push_back(file.name());  // Lưu tên file vào danh sách
-    }
+    FileEntry entry;
+
+    String fullName = String(file.name());
+    int lastSlash = fullName.lastIndexOf('/');
+    if (lastSlash != -1)
+      entry.name = fullName.substring(lastSlash + 1);
+    else
+      entry.name = fullName;
+
+    entry.path = String(file.name());  // Path đầy đủ để truy cập lại
+    entry.isDirectory = file.isDirectory();
+
+    fileList.push_back(entry);
     file = root.openNextFile();
   }
-
-  webSerial.println("✅ Hoàn thành!");
 }
 
 #endif
